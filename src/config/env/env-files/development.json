@@ -1,0 +1,7 @@
+{
+    "envName": "Development",
+    "port": 9000,
+    "db_connectionString": {
+        "db": "mongodb+srv://shams1234:shams1234@cluster0.3jrtd.mongodb.net/SocialNetworks?retryWrites=true&w=majority"
+    }
+}

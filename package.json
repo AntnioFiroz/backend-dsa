@@ -1,0 +1,26 @@
+{
+  "name": "student_listing_be",
+  "version": "1.0.0",
+  "description": "Helping hand",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "Md Shams Firoz",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "colors": "^1.4.0",
+    "config": "^3.3.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "joi": "^17.2.1",
+    "logger": "0.0.1",
+    "moment": "^2.27.0",
+    "mongoose": "^5.10.2",
+    "uuid4": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
