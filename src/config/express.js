@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const responseHandler = require('./../app/common/handlers/response.handler')
 const config = require('./env/config');
-const path = require('path');
+const appRoutes = require("../app/routes/index");
 
 module.exports = () => {
     const app = express();
@@ -11,14 +11,10 @@ module.exports = () => {
     app.use(express.static('./app'));
     app.use(responseHandler());
 
-    // You need to import all of your routes here
-    // Import all routes
-    require('../app/modules/post/post.routes')(app);
-    require('./../app/modules/user/user.routes')(app);
-
+    app.use("/", appRoutes);
 
     const PORT = config.port ? config.port : process.env.PORT
-    app.get('/', (req, res) => { return res.status(200).send(`Server is running on Port ${PORT}
+    app.get('/', (req, res) => { return res.status(200).send( `Server is running on Port ${PORT}
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -107,15 +103,11 @@ module.exports = () => {
     </body>
     </html>  
     `) })
-  
-      
 
-    // 404 - Not Found
     app.use((req, res, next) => {
         return res.error.NotFound('Requested Route [ ' + req.url + ' ] Not found.');
     })
 
-    // 500 - Any server error
     app.use(function (err, req, res, next) {
         console.error(err);
         return res.error.ServerError('Internal Server Error', err);
@@ -123,3 +115,6 @@ module.exports = () => {
 
     return app;
 }
+
+
+

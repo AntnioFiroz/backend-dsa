@@ -4,6 +4,7 @@ exports.createUser = async (req, res, next) => {
    
     try {
         const userPayload = req.body
+        console.log("user",userPayload)
         const result = await userService.doCreateUser(userPayload)
         console.log(result);
         if (result.status === true) {

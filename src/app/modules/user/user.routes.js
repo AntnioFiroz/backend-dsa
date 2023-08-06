@@ -6,7 +6,7 @@ module.exports = (app) => {
     app
         .route(prefix + '/createUser')
         // .all(_userValidator.validateCreateUserSchema)
-        .get(_userController.createUser);
+        .post(_userController.createUser);
 
     // app
     //     .route(prefix + '/get_users')
