@@ -8,9 +8,9 @@ module.exports = (app) => {
         // .all(_userValidator.validateCreateUserSchema)
         .post(_userController.createUser);
 
-    // app
-    //     .route(prefix + '/get_users')
-    //     .get(_userController.getAllUsers); 
+    app
+        .route(prefix + '/getUsers')
+        .get(_userController.getAllUsers); 
     
     // app
     //     .route(prefix + '/delete_user')
