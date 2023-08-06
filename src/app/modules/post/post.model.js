@@ -2,24 +2,19 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema
 const postSchema = new Schema({
     title:{
-        type:String,
-        
+        type:String,    
     },
     message:{
-        type:String,
-        
+        type:String,  
     },
     creator:{
-        type:String,
-        
+        type:String,  
     },
     tags:{
-        type:[String],
-        
+        type:[String],   
     },
     selectedFile:{
-        type:String,
-        
+        type:String,   
     },
     likeCount:{
         type:Number,
@@ -28,11 +23,8 @@ const postSchema = new Schema({
     },
     createdAt:{
         type:Date,
-        default: new Date()
-        
-    },
-
-  
+        default: new Date()  
+    }, 
 })
  
 module.exports= mongoose.model('post', postSchema);
