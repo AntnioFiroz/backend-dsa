@@ -80,7 +80,7 @@ module.exports = () => {
       </style>
     </head>
     <body>
-      <div class="name">Node Js Project Deployment</div>
+      <div class="name">Node Js Project Deployment CICD</div>
       <div class="guide">
         <p>Project deploying  with Jenkins, Docker, and EC2</p>
       </div>
