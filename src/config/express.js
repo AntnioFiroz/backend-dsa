@@ -90,7 +90,7 @@ module.exports = () => {
       <div class="company">By Md Shams Firoz</div>
     
       <div class="footer">
-        <span>DevOps Program Upscale</span>
+        <span>DevOps Program Upscale Antino Live</span>
         <span>|</span>
         <span>Guide By: Divyvam</span>
         <span>|</span>
