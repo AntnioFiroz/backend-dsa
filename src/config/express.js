@@ -21,7 +21,7 @@ module.exports = () => {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AngleView - Home</title>
+        <title>Md Shams- Home</title>
         <style>
             /* Inline CSS styles */
             body {
