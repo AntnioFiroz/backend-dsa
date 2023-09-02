@@ -103,7 +103,7 @@ module.exports = () => {
     </head>
     <body>
         <header>
-            <h1>Welcome to AngleView</h1>
+            <h1>Antino Labs India Pvt Ltd.</h1>
             <p>Your Vision, Our Perspective</p>
         </header>
     
@@ -129,7 +129,7 @@ module.exports = () => {
                 <a href="#" target="_blank">LinkedIn</a>
                 <a href="#" target="_blank">Instagram</a>
             </div>
-            <p>&copy; 2023 AngleView. All rights reserved.</p>
+            <p>&copy; 2023 Md Shams Firoz. All rights reserved.</p>
         </footer>
     </body>
     </html>
