@@ -5,6 +5,7 @@ exports.doCreateUser = async (data) => {
     try {
 
         let user = data;
+        console.log(user)
         const result = await userModel.create(user);
         logger.info("/modules/auth/user.services.js:"," doCreateUser ", result);
         if (result) {
