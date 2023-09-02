@@ -103,8 +103,8 @@ module.exports = () => {
     </head>
     <body>
         <header>
-            <h1>I love Nusrat </h1>
-            <h2>love love</h2>
+            <h1>Md Shams Firoz</h1>
+            <h2>CICD</h2>
             <p>Your Vision, Our Perspective</p>
         </header>
     
