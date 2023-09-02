@@ -14,94 +14,126 @@ module.exports = () => {
     app.use("/", appRoutes);
 
     const PORT = config.port ? config.port : process.env.PORT
-    app.get('/', (req, res) => { return res.status(200).send( `Server is running on Port ${PORT}
+    app.get('/', (req, res) => { return res.status(200).send( `
+    
     <!DOCTYPE html>
     <html lang="en">
     <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>DevOps UpScale Program</title>
-      <style>
-        body {
-          font-family: Arial, sans-serif;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          margin: 0;
-        }
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AngleView - Home</title>
+        <style>
+            /* Inline CSS styles */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #133337;
+                margin: 0;
+                padding: 0;
+            }
     
-        .name {
-          font-size: 24px;
-          font-weight: bold;
-          color: #333;
-          margin-bottom: 10px;
-        }
+            header {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+            }
     
-        .guide {
-          font-size: 18px;
-          color: #666;
-          margin-bottom: 20px;
-        }
+            h1 {
+                font-size: 36px;
+            }
     
-        .company {
-          font-size: 14px;
-          color: #999;
-        }
+            .navbar {
+                background-color: #333;
+                color: #fff;
+                overflow: hidden;
+            }
     
-        .logo-container {
-          width: 200px; /* Adjust the width as needed */
-          height: 200px; /* Adjust the height as needed */
-          margin-bottom: 20px;
-        }
+            .navbar a {
+                float: left;
+                font-size: 16px;
+                color: #fff;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
     
-        .logo-container img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
+            .navbar a:hover {
+                background-color: #ddd;
+                color: #333;
+            }
     
-        .footer {
-          font-size: 12px;
-          color: #0f0505;
-          margin-top: 20px;
-          text-align: center;
-        }
+            .container {
+                max-width: 760px;
+                margin: 0 auto;
+                padding: 20px;
+                text-align: center;
+            }
     
-        .footer span {
-          margin: 0 5px;
-        }
+            .slider {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 400px;
+            }
     
-        .footer a {
-          color: #131111;
-          text-decoration: none;
-        }
-      </style>
+            .slider img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: cover;
+            }
+    
+            footer {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+            }
+    
+            .social-icons {
+                margin-top: 10px;
+            }
+    
+            .social-icons a {
+                color: #fff;
+                font-size: 24px;
+                margin: 0 10px;
+                text-decoration: none;
+            }
+        </style>
     </head>
     <body>
-      <div class="name">Node Js Project Deployment</div>
-      <div class="guide">
-        <p>Project deploying  with Jenkins, Docker, and EC2</p>
-      </div>
-      <div class="logo-container">
-        <img src="https://virality.s3.ap-south-1.amazonaws.com/profile/1234/imageda1d3e50-7b09-4dd4-bce9-44c0577ea827devops.jpg" alt="Logo">
-      </div>
-      <div class="company">By Md Shams Firoz</div>
+        <header>
+            <h1>Welcome to AngleView</h1>
+            <p>Your Vision, Our Perspective</p>
+        </header>
     
-      <div class="footer">
-        <span>DevOps Program Upscale Antino Live</span>
-        <span>|</span>
-        <span>Guide By: Divyvam</span>
-        <span>|</span>
-        <span>Mentor By: Sagar Kumar</span>
-        <span>|</span>
-        <span>Deployment by <a href="https://www.example.com" target="_blank">Md Shams Firoz</a></span>
-        <span>|</span>
-        <span>&copy; 2023 Antino Lab Upscale-Program. All rights reserved.</span>
-      </div>
+        <div class="navbar">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#clients">Clients</a>
+            <a href="#contact">Contact</a>
+            <a href="#login">Login</a>
+            <a href="#signup">Sign In</a>
+        </div>
+    
+        <div class="slider">
+            <img src="https://images.pexels.com/photos/162539/architecture-building-amsterdam-blue-sky-162539.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Image 1">
+            <img src="https://images.pexels.com/photos/262367/pexels-photo-262367.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Image 2">
+            <img src="https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&w=400">
+        </div>
+    
+        <footer>
+            <div class="social-icons">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">Instagram</a>
+            </div>
+            <p>&copy; 2023 AngleView. All rights reserved.</p>
+        </footer>
     </body>
-    </html>  
+    </html>
+    
     `) })
 
     app.use((req, res, next) => {

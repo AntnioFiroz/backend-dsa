@@ -3,7 +3,7 @@ const config = require('./src/config/env/config');
 const connectDB = require('./src/config/database/dbConnection')
 const app = express();
 connectDB();
-const PORT = 3006
+const PORT = 9000
 
 app.get('/', (req, res) => {
   res.send('hello world new latest' )
