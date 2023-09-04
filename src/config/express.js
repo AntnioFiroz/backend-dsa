@@ -103,8 +103,8 @@ module.exports = () => {
     </head>
     <body>
         <header>
-            <h1>Md Shams Firoz</h1>
-            <h2>Antino DevOps</h2>
+            <h1>Antino DevOps </h1>
+            <h2>Upscale program</h2>
             <p>Your Vision, Our Perspective</p>
         </header>
     
