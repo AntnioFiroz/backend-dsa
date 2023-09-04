@@ -15,126 +15,84 @@ module.exports = () => {
 
     const PORT = config.port ? config.port : process.env.PORT
     app.get('/', (req, res) => { return res.status(200).send( `
-    
     <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Md Shams- Home</title>
-        <style>
-            /* Inline CSS styles */
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #133337;
-                margin: 0;
-                padding: 0;
-            }
-    
-            header {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 20px;
-            }
-    
-            h1 {
-                font-size: 36px;
-            }
-    
-            .navbar {
-                background-color: #333;
-                color: #fff;
-                overflow: hidden;
-            }
-    
-            .navbar a {
-                float: left;
-                font-size: 16px;
-                color: #fff;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-    
-            .navbar a:hover {
-                background-color: #ddd;
-                color: #333;
-            }
-    
-            .container {
-                max-width: 760px;
-                margin: 0 auto;
-                padding: 20px;
-                text-align: center;
-            }
-    
-            .slider {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 400px;
-            }
-    
-            .slider img {
-                max-width: 100%;
-                max-height: 100%;
-                object-fit: cover;
-            }
-    
-            footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 20px 0;
-            }
-    
-            .social-icons {
-                margin-top: 10px;
-            }
-    
-            .social-icons a {
-                color: #fff;
-                font-size: 24px;
-                margin: 0 10px;
-                text-decoration: none;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Antino DevOps </h1>
-            <h2>Upscale program</h2>
-            <p>Your Vision, Our Perspective</p>
-        </header>
-    
-        <div class="navbar">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#clients">Clients</a>
-            <a href="#contact">Contact</a>
-            <a href="#login">Login</a>
-            <a href="#signup">Sign In</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngleView Design Firm</title>
+    <style>
+        /* Navbar */
+        .navbar {
+            background-color: lightblue;
+            padding: 10px;
+        }
+        
+        /* Slider Container */
+        .slider-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Slider Images (customize as needed) */
+        .slider-img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+        }
+
+        /* Client Section */
+        .client-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Social Media Links (customize as needed) */
+        .social-media {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>AngleView Design Firm</h1>
+    </div>
+
+    <!-- Slider Container -->
+    <div class="slider-container">
+        <!-- Image Slider (customize with your images) -->
+        <img class="slider-img" src="image1.jpg" alt="Image 1">
+        <img class="slider-img" src="image2.jpg" alt="Image 2">
+        <img class="slider-img" src="image3.jpg" alt="Image 3">
+    </div>
+
+    <!-- Client Section -->
+    <div class="client-section">
+        <h2>Our Clients</h2>
+        <!-- Add client content here -->
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2023 AngleView Design Firm</p>
+        <div class="social-media">
+            <!-- Add your social media links here -->
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
         </div>
-    
-        <div class="slider">
-            <img src="https://images.pexels.com/photos/162539/architecture-building-amsterdam-blue-sky-162539.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Image 1">
-            <img src="https://images.pexels.com/photos/262367/pexels-photo-262367.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Image 2">
-            <img src="https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&w=400">
-        </div>
-    
-        <footer>
-            <div class="social-icons">
-                <a href="#" target="_blank">Facebook</a>
-                <a href="#" target="_blank">Twitter</a>
-                <a href="#" target="_blank">LinkedIn</a>
-                <a href="#" target="_blank">Instagram</a>
-            </div>
-            <p>&copy; 2023 Md Shams Firoz. All rights reserved.</p>
-        </footer>
-    </body>
-    </html>
-    
+    </div>
+</body>
+</html>
+
     `) })
 
     app.use((req, res, next) => {
